@@ -1,0 +1,30 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+header{
+  border-bottom: solid black;
+  background-color: rgba(141,0,1,255);
+  height: 10vh;
+}
+
+.body{
+  height: 75vh;
+  background-color: rgba(214,201,149,255);
+}
+
+footer{
+  border-top: solid black;
+  background-color: rgba(141,0,1,255);
+  height: 15vh;
+}
