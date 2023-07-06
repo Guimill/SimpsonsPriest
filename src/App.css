@@ -18,6 +18,44 @@ header{
   height: 10vh;
 }
 
+h1 {
+  color: rgba(1,15,108,255);
+  text-shadow: 1px 1px 0px black;
+  font-size: 9rem;
+}
+
+.welcome {
+  overflow: hidden;
+  text-align: center;
+  font-size: 6em;
+  font-style: italic;
+}
+
+.welcome:before,
+.welcome:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 4px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.welcome:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.welcome:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+p {
+  font-size: 3em
+}
+
 .body{
   height: 75vh;
   background-color: rgba(214,201,149,255);
