@@ -1,8 +1,10 @@
 import './App.css';
+import bell from "bell.png"
 
 function App() {
   return (
     <div className="App">
+      <img src={bell}></img>
       <header></header>
       <div className='body'>
         <p className='welcome'>Welcome</p>
