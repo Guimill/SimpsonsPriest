@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'gothic';
+  src: url('./MercusuarSemiboldScript-AL2n6.ttf');
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('./Jost-Medium.ttf');
+}
+
 html{
   height: 100%;
   width: 100%;
@@ -19,15 +29,19 @@ header{
 }
 
 h1 {
+
+  font-family: 'Jost';
+  line-height: 90%;
   color: rgba(1,15,108,255);
   text-shadow: 1px 1px 0px black;
-  font-size: 9rem;
+  font-size: 11rem;
 }
 
 .welcome {
   overflow: hidden;
   text-align: center;
-  font-size: 6em;
+  font-size: 25vh;
+  font-family: gothic;
   font-style: italic;
 }
 
@@ -43,26 +57,28 @@ h1 {
 }
 
 .welcome:before {
-  right: 0.5em;
+  right: 0.05em;
   margin-left: -50%;
 }
 
 .welcome:after {
-  left: 0.5em;
+  left: 0.4em;
   margin-right: -50%;
 }
 
 p {
-  font-size: 3em
+  font-weight: bolder;
+  font-size: 3em;
+  font-family: 'Jost';
 }
 
 .body{
-  height: 80vh;
+  height: 83vh;
   background-color: rgba(214,201,149,255);
 }
 
 footer{
   border-top: solid black;
   background-color: rgba(141,0,1,255);
-  height: 15vh;
+  height: 12vh;
 }
