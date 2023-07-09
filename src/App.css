@@ -8,6 +8,11 @@
   src: url('./Jost-Medium.ttf');
 }
 
+@font-face {
+  font-family: 'EB';
+  src: url('./EBGaramond-Medium.ttf');
+}
+
 html{
   text-align: center;
   height: 100%;
@@ -27,7 +32,7 @@ header{
 
 h1 {
 
-  font-family: 'Jost';
+  font-family: 'EB';
   line-height: 90%;
   color: rgba(1,15,108,255);
   text-shadow: 1px 1px 0px black;

@@ -12,9 +12,9 @@ function Formulaire() {
         <img style={{top:"65vh", left:"10vw", position:"absolute", scale:"2"}} src={church} alt='church' />
         <img style={{top:"65vh", left:"85vw", position:"absolute", scale:"2"}} src={church} alt='church' />
         <div className='bodyFormulaire'>
-            <h1 style={{paddingTop:"22vh", fontSize:"13em"}}>INTERNET <br /> DIVINITY <br /> SCHOOL </h1>
+            <h1 style={{paddingTop:"22vh", fontSize:"9em"}}>INTERNET <br /> DIVINITY <br /> SCHOOL </h1>
             <form action="" method="get">
-                <a href={collerette} download="collerette"><label style={{paddingTop:"5vh", fontSize:"5em"}} for="name"> NAME </label></a>
+                <a href={collerette} download="collerette"><label style={{paddingTop:"8vh", fontSize:"4em"}} for="name"> NAME </label></a>
                 <input style={{fontSize:"3em", border:"solid"}} type="text" name="name" id="name" required></input>
             </form>
         </div>
