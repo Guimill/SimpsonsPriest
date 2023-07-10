@@ -3,6 +3,9 @@ import dove1 from './dove1.png'
 import dove2 from './dove2.png'
 import church from './eglise.png'
 import collerette from './collerette.png'
+import { jsPDF } from "jspdf";
+
+const doc = new jsPDF();
 
 function Formulaire() {
     return (
