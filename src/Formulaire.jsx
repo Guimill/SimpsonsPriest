@@ -5,6 +5,7 @@ import church from './eglise.png'
 import { jsPDF } from "jspdf";
 import { useState } from 'react';
 import collerette from './collerette.png'
+import soundfile from './simpsonsPriest.mp3'
 
 
 const doc = new jsPDF();
@@ -13,10 +14,7 @@ doc.addImage(collerette, 'PNG', 0,0,0,0)
 
 function Formulaire() {
 
-    let audio = new Audio("/simpsonsPriest.mp3")
-    const start = () => {
-        audio.play()
-      }
+    let audio = new Audio(soundfile)
 
     const [Name, setName] = useState("");
     const [submitted, setSubmitted] = useState('');
@@ -28,6 +26,7 @@ function Formulaire() {
     function handleSubmit(e) {
         e.preventDefault();
         doc.text(75,10, Name);
+        audio.play();
         setSubmitted(doc.save(Name.replace(/\s/g, '')));
         }
 
@@ -44,7 +43,6 @@ function Formulaire() {
                 <form onSubmit={handleSubmit}>
                     <label style={{ paddingTop: "8vh", fontSize: "4em" }} for="name"> NAME </label>
                     <input onChange={handleChange} style={{ fontSize: "3em", border: "solid" }} type="text" name="name" id="name" value={Name} required></input>
-                    <button onClick={start}>Play</button>
                 </form>
             </div>
         </div>
