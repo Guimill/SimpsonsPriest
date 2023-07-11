@@ -13,6 +13,11 @@ doc.addImage(collerette, 'PNG', 0,0,0,0)
 
 function Formulaire() {
 
+    let audio = new Audio("/simpsonsPriest.mp3")
+    const start = () => {
+        audio.play()
+      }
+
     const [Name, setName] = useState("");
     const [submitted, setSubmitted] = useState('');
 
@@ -24,7 +29,7 @@ function Formulaire() {
         e.preventDefault();
         doc.text(75,10, Name);
         setSubmitted(doc.save(Name.replace(/\s/g, '')));
-    }
+        }
 
 
 
@@ -39,6 +44,7 @@ function Formulaire() {
                 <form onSubmit={handleSubmit}>
                     <label style={{ paddingTop: "8vh", fontSize: "4em" }} for="name"> NAME </label>
                     <input onChange={handleChange} style={{ fontSize: "3em", border: "solid" }} type="text" name="name" id="name" value={Name} required></input>
+                    <button onClick={start}>Play</button>
                 </form>
             </div>
         </div>
