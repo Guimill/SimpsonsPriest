@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4630bc8d.css",
+    "main.js": "/static/js/main.815fd425.js",
+    "static/js/498.361807b5.chunk.js": "/static/js/498.361807b5.chunk.js",
+    "static/js/703.7aa021d0.chunk.js": "/static/js/703.7aa021d0.chunk.js",
+    "static/js/598.10eea627.chunk.js": "/static/js/598.10eea627.chunk.js",
+    "static/media/EBGaramond-Medium.ttf": "/static/media/EBGaramond-Medium.1d8109093c288b5cdafc.ttf",
+    "static/media/MercusuarSemiboldScript-AL2n6.ttf": "/static/media/MercusuarSemiboldScript-AL2n6.7244c15495ff6e2be2af.ttf",
+    "static/media/simpsonsPriest.mp3": "/static/media/simpsonsPriest.85d7197aadc66782c0be.mp3",
+    "static/media/Jost-Medium.ttf": "/static/media/Jost-Medium.6b59eccdfbb145802814.ttf",
+    "static/media/collerette.png": "/static/media/collerette.a8bd7bcd2424e8a33701.png",
+    "static/media/dove1.png": "/static/media/dove1.b90fdef93da7af48d779.png",
+    "static/media/dove2.png": "/static/media/dove2.952ea5dbdb2be952d29d.png",
+    "index.html": "/index.html",
+    "main.4630bc8d.css.map": "/static/css/main.4630bc8d.css.map",
+    "main.815fd425.js.map": "/static/js/main.815fd425.js.map",
+    "498.361807b5.chunk.js.map": "/static/js/498.361807b5.chunk.js.map",
+    "703.7aa021d0.chunk.js.map": "/static/js/703.7aa021d0.chunk.js.map",
+    "598.10eea627.chunk.js.map": "/static/js/598.10eea627.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4630bc8d.css",
+    "static/js/main.815fd425.js"
+  ]
+}
