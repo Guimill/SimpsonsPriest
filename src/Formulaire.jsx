@@ -33,16 +33,16 @@ function Formulaire() {
 
 
     return (
-        <div>
-            <img style={{ top: "10vh", left: "85vw", position: "absolute", scale: "2" }} src={dove2} alt='dove2' />
-            <img style={{ top: "10vh", left: "8vw", position: "absolute", scale: "2" }} src={dove1} alt='dove1' />
-            <img style={{ top: "65vh", left: "10vw", position: "absolute", scale: "2" }} src={church} alt='church' />
-            <img style={{ top: "65vh", left: "85vw", position: "absolute", scale: "2" }} src={church} alt='church' />
+        <div className='Formulaire'>
+            <img style={{ top: "10vh", left: "85vw", position: "absolute" }} src={dove2} alt='dove2' />
+            <img style={{ top: "10vh", left: "8vw", position: "absolute" }} src={dove1} alt='dove1' />
+            <img style={{ top: "65vh", left: "10vw", position: "absolute" }} src={church} alt='church' />
+            <img style={{ top: "65vh", left: "85vw", position: "absolute"}} src={church} alt='church' />
             <div className='bodyFormulaire'>
-                <h1 style={{ paddingTop: "22vh", fontSize: "9em" }}>INTERNET <br /> DIVINITY <br /> SCHOOL </h1>
+                <h1 id="IDS">INTERNET <br /> DIVINITY <br /> SCHOOL </h1>
                 <form style={{ paddingTop:"8vh"}} onSubmit={handleSubmit}>
-                    <label style={{ paddingTop: "8vh", fontSize: "4em" }} for="name"> NAME </label>
-                    <input onChange={handleChange} style={{ fontSize: "3em", border: "solid" }} type="text" name="name" id="name" value={Name} required></input>
+                    <label for="name"> NAME </label>
+                    <input onChange={handleChange} type="text" name="name" id="name" value={Name} required></input>
                 </form>
             </div>
         </div>

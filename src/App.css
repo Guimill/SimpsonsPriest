@@ -30,13 +30,22 @@ header{
   height: 5vh;
 }
 
+#IDS {
+    font-family: 'EB';
+    line-height: 90%;
+    color: rgba(1,15,108,255);
+    text-shadow: 1px 1px 0px black;
+    font-size: 15vh;
+    padding-top: 25vh;
+}
+
 h1 {
 
   font-family: 'EB';
   line-height: 90%;
   color: rgba(1,15,108,255);
   text-shadow: 1px 1px 0px black;
-  font-size: 11rem;
+  font-size: 11vh;
 }
 
 .welcome {
@@ -93,4 +102,65 @@ a {
 .bodyFormulaire {
   height: 100vh;
   background-color: rgba(150,180,201,255);
+}
+
+label {
+  padding-top: 8vh;
+  font-size: 5vh;
+}
+
+input{
+  font-size: 5vh;
+  border: solid 2px;
+}
+
+.Formulaire > img {
+  scale: 2;
+}
+
+@media (max-width: 1400px) {
+  .Formulaire > img {
+    scale: 1.5;
+  }
+
+}
+
+@media (max-width: 1080px) {
+  .Formulaire > img {
+    scale: 1.2;
+    translate: -3.5vh;
+  }
+  input{
+    font-size: 5vw;
+  }
+  
+  #IDS {
+    font-size: 12vw;
+    padding-top: 25vh;
+  }
+
+  label {
+    padding-top: 8vh;
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 1080px) {
+  .Formulaire > img {
+    scale: 0.6;
+    translate: -6.5vh -6vh;
+  }
+  input{
+    font-size: 5vw;
+  }
+  
+  #IDS {
+    font-size: 12vw;
+    padding-top: 25vh;
+  }
+
+  label {
+    padding-top: 8vh;
+    font-size: 5vw;
+  }
 }
