@@ -15,8 +15,8 @@
 
 html{
   text-align: center;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 * {
@@ -30,22 +30,20 @@ header{
   height: 5vh;
 }
 
-#IDS {
-    font-family: 'EB';
-    line-height: 90%;
-    color: rgba(1,15,108,255);
-    text-shadow: 1px 1px 0px black;
-    font-size: 15vh;
-    padding-top: 25vh;
-}
-
-h1 {
-
+h1{
   font-family: 'EB';
   line-height: 90%;
   color: rgba(1,15,108,255);
   text-shadow: 1px 1px 0px black;
-  font-size: 11vh;
+}
+
+#IDS {
+    font-size: 15vh;
+    padding-top: 25vh;
+}
+
+#ePiscopal {
+  font-size: 20vh;
 }
 
 .welcome {
@@ -118,6 +116,11 @@ input{
   scale: 2;
 }
 
+.FirstPage > img {
+  scale: 1.2;
+  z-index: 2;
+}
+
 @media (max-width: 1400px) {
   .Formulaire > img {
     scale: 1.5;
@@ -127,31 +130,12 @@ input{
 
 @media (max-width: 1080px) {
   .Formulaire > img {
-    scale: 1.2;
-    translate: -3.5vh;
-  }
-  input{
-    font-size: 5vw;
-  }
-  
-  #IDS {
-    font-size: 12vw;
-    padding-top: 25vh;
-  }
-
-  label {
-    padding-top: 8vh;
-    font-size: 5vw;
-  }
-}
-
-@media (max-width: 1080px) {
-  .Formulaire > img {
     scale: 0.6;
     translate: -6.5vh -6vh;
   }
   input{
     font-size: 5vw;
+    width: 40vw;
   }
   
   #IDS {
@@ -162,5 +146,95 @@ input{
   label {
     padding-top: 8vh;
     font-size: 5vw;
+  }
+
+  #ePiscopal {
+    padding-top: 10vh;
+    font-size: 15vw;
+  }
+
+  .FirstPage > img {
+    scale: 0.8;
+    translate: -7vw -7vh;
+    z-index: 2;
+  }
+
+  .welcome {
+    font-size: 15vw;
+  }
+
+  .welcome:before,
+  .welcome:after {
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .Formulaire > img {
+    padding-top: 10vh;
+    scale: 0.6;
+    translate: -6.5vh -8vh;
+  }
+
+  input{
+    font-size: 5vw;
+    width: 40vw;
+  }
+  
+  #IDS {
+    font-size: 12vw;
+    padding-top: 35vh;
+  }
+
+  label {
+    padding-top: 8vh;
+    font-size: 5vw;
+  }
+
+  #ePiscopal {
+    padding-top: 15vh;
+    font-size: 15vw;
+  }
+
+  .FirstPage > img {
+    scale: 0.8;
+    translate: -11vw -5vh;
+    z-index: 2;
+  }
+
+  #bells {
+    scale: 0.6;
+    translate: -15vw -2vh;
+  }
+
+  #shield {
+    scale: 0.5;
+    translate: -18vw -4vh;
+  }
+
+  .welcome {
+    padding-top: 5vh;
+    font-size: 10vw;
+  }
+
+  p {
+    font-size: 8vw;
+  }
+
+  .welcome:before,
+  .welcome:after {
+    width: 50%;
+  }
+
+  header {
+    height: 10vh;
+  }
+
+  footer {
+    height: 20vh;
+  }
+
+  .bodyApp {
+    height: 70vh;
   }
 }
