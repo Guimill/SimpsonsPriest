@@ -9,7 +9,7 @@ import soundfile from './simpsonsPriest.mp3'
 
 
 const doc = new jsPDF();
-doc.addImage(collerette, 'PNG', 0,0,0,0)
+doc.addImage(collerette, 'PNG', 5,5,0,0)
 
 
 function Formulaire() {
@@ -25,7 +25,8 @@ function Formulaire() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        doc.text(75,10, Name);
+        doc.text(75,20, Name);
+        doc.text(50,10, "Voici votre collerette de ministre du culte")
         audio.play();
         setSubmitted(doc.save(Name.replace(/\s/g, '')));
         }
